@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>	
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--Custom Style -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	
+
+	<title>CalcJS - My First JS Project</title>
+
+
+
+</head>
+<body>
+	<section>
+		<div class="calcLayout">
+			<h4>CalcJS</h4>
+			<input id="result" type="text" placeholder="0" disabled="disabled" class="display">			
+			<div class="container">
+				<div class="buttonBox">
+					<div class="numberBox">
+						<button type="button" class="buttons" onclick="calc('num', '8')">8</button>
+						<button type="button" class="buttons" onclick="calc('num', '9')">9</button>
+						<button type="button" class="buttons" onclick="calc('num', '7')">7</button>
+						<button type="button" class="buttons" onclick="calc('num', '4')">4</button>
+						<button type="button" class="buttons" onclick="calc('num', '5')">5</button>
+						<button type="button" class="buttons" onclick="calc('num', '6')">6</button>
+						<button type="button" class="buttons" onclick="calc('num', '1')">1</button>
+						<button type="button" class="buttons" onclick="calc('num', '2')">2</button>
+						<button type="button" class="buttons" onclick="calc('num', '3')">3</button>
+						<button disabled="disabled" type="button" class="buttons" onclick="calc('act', '%')">%</button>					
+						<button type="button" class="buttons" onclick="calc('num', '0')">0</button>
+						<button type="button" class="buttons" onclick="calc('num', '.')">.</button>					
+					</div>
+					<div class="operationsBox">
+						<button type="button" class="opBtn" onclick="calc('act', '+')">+</button>
+						<button type="button" class="opBtn" onclick="calc('act', '-')">-</button>
+						<button type="button" class="opBtn" onclick="calc('act', '*')">*</button>
+						<button type="button" class="opBtn" onclick="calc('act', '/')">/</button>					
+					</div>
+				</div>			
+				<div class="resultBox">					
+					<button type="button" class="opBtn btnLarge" onclick="calc('act', 'c')">C</button>
+					<button id="equals" type="button" class="opBtn btnLarge" onclick="calc('act', '=')">=</button>
+				</div>
+			</div>			
+		</div>
+	</section>
+
+
+
+	<!--Custm scripts -->
+	<script src="script/script.js"></script>
+
+</body>
+</html>
