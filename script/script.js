@@ -6,7 +6,6 @@ var noDouble = 0 // prevents user to double click action and repeat the last act
 
 function calc(operator, opt){
 
-
 	if(operator === 'num' && reset == 0) { //btn pressed is a number
 		document.getElementById('result').value += opt; //keeps concatenating numbers on display 
 	
